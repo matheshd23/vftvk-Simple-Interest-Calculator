@@ -1,16 +1,32 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
+    <title>Simple Interest Calculatortitle>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="number"  id="rate">  <br/>
         No. of Years <input type="number"  id="years">  <br/>
         Interest : <span id="result"></span><br>
+        <input type="range"  id="rate" min="minval" max="maxval" value="default_val">
+        <span id="rate_val">
+            10.25%
+        </span>
+        <select id="years">
+            <option value="1">1</option>
+        </select>
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result">
 
-        <button onclick="compute()">Compute</button>
+        </span>
+        <footer>
+            &#169; this Calculator belongs to Mathesh
+        </footer>
     </body>
+</div>
 </html>
